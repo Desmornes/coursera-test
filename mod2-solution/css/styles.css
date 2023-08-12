@@ -1,0 +1,103 @@
+h1{color: rgb(241, 56, 9);
+    font-family: fantasy;
+    text-align: center;
+    margin-bottom: 10px;
+}
+*{margin:0;padding:0;}
+
+.row{
+    font-family: cursive;
+    margin-inline: 4%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr) ;
+    gap: 4%;
+}
+#chicken{
+    background-color: hsl(27, 67%, 90%);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    border: 1px solid black;
+    padding: 2%;
+    padding-top: 6%;   
+}
+#beef{
+    background-color: hsl(27, 67%, 58%);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    border: 1px solid black;
+    padding: 2%;
+    padding-top: 6%;
+}
+#sushi{
+    background-color: hsl(46, 89%, 48%);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    border: 1px solid black;
+    padding: 2%;
+    padding-top: 6%;
+}
+#food{
+    background-color: rgb(230, 93, 13);
+    font-size: 101%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    position:absolute;
+    right: 0;
+    top:0;
+    grid: 200px;
+    border:1px solid black;   
+}
+#food1{
+    background-color: #eea405ea;
+    font-size: 101%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    position:absolute;
+    right: 0;
+    top:0;
+    grid: 200px;
+    border:1px solid black;   
+}
+#food2{
+    background-color: #f3f702;
+    font-size: 101%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    position:absolute;
+    right: 0;
+    top:0;
+    grid: 200px;
+    border:1px solid black;   
+}   
+      /*mobile mode*/
+@media(max-width: 767px){
+    .row{
+        grid-template-columns:1fr;  
+            
+    }
+   }
+   /*tablet mode*/
+@media(min-width: 768px) and (max-width: 991px) {
+    .row {
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom:0px;
+        gap: 2%;       
+    }
+    #sushi {
+        grid-column: 2 span;
+        background-color: brown;
+        margin-top:  7px;       
+}
+}
